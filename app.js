@@ -83,6 +83,9 @@ import { PathProvider } from "./src/utils/PathContext";
 
 // react components rendered like this
 
+const somevaribale =null;
+
+
 const Grocery = lazy(() => import("./src/components/Grocery"));
 
 const About = lazy(() => import("./src/components/AboutUs"));
