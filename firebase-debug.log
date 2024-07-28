@@ -1,0 +1,181 @@
+[debug] [2024-05-18T16:22:56.275Z] ----------------------------------------------------------------------
+[debug] [2024-05-18T16:22:56.279Z] Command:       D:\Apps\node.exe C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login:ci
+[debug] [2024-05-18T16:22:56.279Z] CLI Version:   13.9.0
+[debug] [2024-05-18T16:22:56.280Z] Platform:      win32
+[debug] [2024-05-18T16:22:56.280Z] Node Version:  v18.18.2
+[debug] [2024-05-18T16:22:56.282Z] Time:          Sat May 18 2024 21:52:56 GMT+0530 (India Standard Time)
+[debug] [2024-05-18T16:22:56.282Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-18T16:22:56.288Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[warn] !  Authenticating with a `login:ci` token is deprecated and will be removed in a future major version of `firebase-tools`. Instead, use a service account key with `GOOGLE_APPLICATION_CREDENTIALS`: https://cloud.google.com/docs/authentication/getting-started 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=248111455&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-05-18T16:22:57.596Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-05-18T16:22:57.598Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-05-18T16:31:31.046Z] ----------------------------------------------------------------------
+[debug] [2024-05-18T16:31:31.050Z] Command:       D:\Apps\node.exe C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-05-18T16:31:31.051Z] CLI Version:   13.9.0
+[debug] [2024-05-18T16:31:31.051Z] Platform:      win32
+[debug] [2024-05-18T16:31:31.052Z] Node Version:  v18.18.2
+[debug] [2024-05-18T16:31:31.053Z] Time:          Sat May 18 2024 22:01:31 GMT+0530 (India Standard Time)
+[debug] [2024-05-18T16:31:31.053Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-18T16:31:31.067Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-18T16:31:31.068Z] > authorizing via signed-in user (thakur.vishal1775@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\visha\OneDrive\Desktop\Namaste-React
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-05-18T16:32:32.515Z] > refreshing access token with scopes: []
+[debug] [2024-05-18T16:32:32.519Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-05-18T16:32:32.520Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-18T16:32:33.745Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 403
+[debug] [2024-05-18T16:32:33.746Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-18T16:32:33.746Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-05-18T16:32:34.806Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:142:12)
+    at refreshTokens (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:515:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAccessToken (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:40:18)
+    at async Client.addAuthHeader (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:167:21)
+    at async Client.request (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:118:34)
+    at async getProjectPage (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:238:17)
+    at async getFirebaseProjectPage (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:255:23)
+    at async selectProjectInteractively (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:94:41)
+    at async doSetup (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:88:27)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2024-05-18T16:33:00.501Z] ----------------------------------------------------------------------
+[debug] [2024-05-18T16:33:00.505Z] Command:       D:\Apps\node.exe C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-05-18T16:33:00.505Z] CLI Version:   13.9.0
+[debug] [2024-05-18T16:33:00.506Z] Platform:      win32
+[debug] [2024-05-18T16:33:00.506Z] Node Version:  v18.18.2
+[debug] [2024-05-18T16:33:00.508Z] Time:          Sat May 18 2024 22:03:00 GMT+0530 (India Standard Time)
+[debug] [2024-05-18T16:33:00.508Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-18T16:33:00.521Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-18T16:33:00.522Z] > authorizing via signed-in user (thakur.vishal1775@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\visha\OneDrive\Desktop\Namaste-React
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-05-18T16:33:27.255Z] > refreshing access token with scopes: []
+[debug] [2024-05-18T16:33:27.260Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-05-18T16:33:27.261Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-18T16:33:28.037Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 403
+[debug] [2024-05-18T16:33:28.037Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-18T16:33:28.038Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-05-18T16:33:28.600Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:142:12)
+    at refreshTokens (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:515:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAccessToken (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:40:18)
+    at async Client.addAuthHeader (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:167:21)
+    at async Client.request (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:118:34)
+    at async getProjectPage (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:238:17)
+    at async getFirebaseProjectPage (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:255:23)
+    at async selectProjectInteractively (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:94:41)
+    at async doSetup (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:88:27)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2024-05-18T16:34:39.851Z] ----------------------------------------------------------------------
+[debug] [2024-05-18T16:34:39.854Z] Command:       D:\Apps\node.exe C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-05-18T16:34:39.855Z] CLI Version:   13.9.0
+[debug] [2024-05-18T16:34:39.855Z] Platform:      win32
+[debug] [2024-05-18T16:34:39.856Z] Node Version:  v18.18.2
+[debug] [2024-05-18T16:34:39.857Z] Time:          Sat May 18 2024 22:04:39 GMT+0530 (India Standard Time)
+[debug] [2024-05-18T16:34:39.857Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-18T16:34:39.870Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-18T16:34:39.871Z] > authorizing via signed-in user (thakur.vishal1775@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\visha\OneDrive\Desktop\Namaste-React
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-05-18T16:35:35.414Z] > refreshing access token with scopes: []
+[debug] [2024-05-18T16:35:35.422Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-05-18T16:35:35.422Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-18T16:35:36.502Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 403
+[debug] [2024-05-18T16:35:36.503Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-18T16:35:37.176Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:142:12)
+    at refreshTokens (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:515:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAccessToken (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:40:18)
+    at async Client.addAuthHeader (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:167:21)
+    at async Client.request (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:118:34)
+    at async createCloudProject (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:180:26)
+    at async createFirebaseProjectAndLog (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:45:9)
+    at async promptAndCreateNewProject (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:32:12)
+    at async doSetup (C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:88:27)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2024-05-18T16:36:20.456Z] ----------------------------------------------------------------------
+[debug] [2024-05-18T16:36:20.460Z] Command:       D:\Apps\node.exe C:\Users\visha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login --reauth
+[debug] [2024-05-18T16:36:20.461Z] CLI Version:   13.9.0
+[debug] [2024-05-18T16:36:20.461Z] Platform:      win32
+[debug] [2024-05-18T16:36:20.462Z] Node Version:  v18.18.2
+[debug] [2024-05-18T16:36:20.463Z] Time:          Sat May 18 2024 22:06:20 GMT+0530 (India Standard Time)
+[debug] [2024-05-18T16:36:20.464Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=349649508&redirect_uri=http%3A%2F%2Flocalhost%3A9006&login_hint=thakur.vishal1775%40gmail.com
+[info] 
+[info] Waiting for authentication...

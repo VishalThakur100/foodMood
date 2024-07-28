@@ -1,0 +1,12 @@
+/node_modules
+
+/dist
+
+/.parcel-cache
+
+
+/src/README.md
+
+/src/README2.MD
+/src/readme2.md
+/coverage

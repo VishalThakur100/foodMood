@@ -1,0 +1,53 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "namaste react series",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vishalsingh369/namaste-react.git"
+  },
+  "keywords": [],
+  "author": "VishalSingh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vishalsingh369/namaste-react/issues"
+  },
+  "homepage": "https://github.com/Vishalsingh369/namaste-react#readme",
+  "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-react": "^7.24.7",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^15.0.5",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "parcel": "^2.12.0",
+    "postcss": "^8.4.38",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "@coreui/icons": "^3.0.1",
+    "@coreui/icons-react": "^2.2.1",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@reduxjs/toolkit": "^2.2.3",
+    "firebase-tools": "^13.9.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.1.1",
+    "react-router-dom": "^6.22.3"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
