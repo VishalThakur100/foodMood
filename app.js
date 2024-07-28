@@ -1,10 +1,10 @@
 // const heading = React.createElement("h1", {id: "heading",xyz:"abc"}, "Hello world from react!");
-import React, { Component, lazy, Suspense, useEffect, useState } from "react";
+import React, { lazy, Suspense, useEffect, useState } from "react";
 // import { render } from "react-dom";
+
 import ReactDOM from "react-dom/client";
 import Header from "./src/components/Header";
 import Body from "./src/components/Body";
-// import { createBrowserRouter, Outlet, RouterProvider, BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import About from "./src/components/AboutUs";
 import Contact from "./src/components/Contact";
@@ -15,7 +15,7 @@ import UserContext from "/src/utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./src/utils/appStore";
 import Cart from "./src/components/Cart";
-import { PathProvider } from "./src/utils/PathContext";
+// import { PathProvider } from "./src/utils/PathContext";
 
 // import Grocery from "./src/components/Grocery";
 // const heading=React.createElement("h1",{id: "heading"},"Namaste React");
@@ -81,12 +81,10 @@ import { PathProvider } from "./src/utils/PathContext";
 // react elements rendered like this
 // root.render(jsxheading);
 
-// react components rendered like this
-
-const Grocery =null;
 
 
-Grocery = lazy(() => import("./src/components/Grocery"));
+const Grocery = lazy(() => import("./src/components/Grocery"));
+
 
 const About = lazy(() => import("./src/components/AboutUs"));
 

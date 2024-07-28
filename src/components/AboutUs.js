@@ -1,15 +1,6 @@
-// import { useLocation } from "react-router-dom";
-// import { useContext, useEffect } from "react";
-// import PathContext from "../utils/PathContext";
 import React from "react";
+
 const About = () => {
-  // const {setCurrentPath} = useContext(PathContext);
-  // const {pathname} = useLocation();
-
-  // useEffect(() => {
-  //   setCurrentPath(pathname);
-  // }, [pathname, setCurrentPath]);
-
   return (
     <>
       <div className="p-20 bg-orange-300 text-2xl font-Arvo">

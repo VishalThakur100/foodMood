@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vishalsingh369/namaste-react.git"
+    "url": "git+https://github.com/VishalThakur100/foodMood"
   },
   "keywords": [],
-  "author": "VishalSingh",
+  "author": "Vishal Thakur",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Vishalsingh369/namaste-react/issues"
+    "url": "https://github.com/VishalThakur100/foodMood/issues"
   },
-  "homepage": "https://github.com/Vishalsingh369/namaste-react#readme",
+  "homepage": "https://github.com/VishalThakur100/foodMood",
   "devDependencies": {
     "@babel/core": "^7.24.5",
     "@babel/preset-env": "^7.24.5",
