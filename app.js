@@ -86,7 +86,7 @@ import Cart from "./src/components/Cart";
 const Grocery = lazy(() => import("./src/components/Grocery"));
 
 
-const About = lazy(() => import("./src/components/AboutUs"));
+const About = lazy(() => import("./src/components/About"));
 
 const Applayout = () => {
   const [userName, setuserName] = useState();
